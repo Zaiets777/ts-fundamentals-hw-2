@@ -11,7 +11,7 @@ export const getImagesByQuery = async (query: string, page: number): Promise<Pix
       image_type: "photo",
       orientation: "horizontal",
       safesearch: true,
-      key: '54307701-7beca8de9482a73bad3cf0f52',
+      key: import.meta.env.VITE_PIXABAY_API_KEY,
     },
   });
   return response.data;
